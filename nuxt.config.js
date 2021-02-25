@@ -23,10 +23,10 @@ export default {
 		extendRoutes(routes, resolve) {
 			return [
 				{
-					path: '',
+					path: '/pokemon',
 					name: 'pokemon',
-					component: resolve(__dirname, 'pages/index.vue'),
-					chunkName: 'pages/index'
+					component: resolve(__dirname, 'pages/pokemon/listing.vue'),
+					chunkName: 'pages/pokemon/listing'
 				}
 			]
 		}
